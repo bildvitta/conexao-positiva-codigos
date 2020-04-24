@@ -1,0 +1,37 @@
+@mixin clip-path($value) {
+  clip-path: $value;
+  -moz-clip-path: $value;
+  -webkit-clip-path: $value;
+}
+
+$primary: #e87200;
+$secondary: #0065ae;
+
+$positive-color: #2ecc40;
+$negative-color: #ff4136;
+$warning-color: #ffdc00;
+
+$radius: 10px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  font: normal 16px 'Montserrat', 'sans-serif';
+  line-height: 1.5;
+}
+
+@import 'components/container',
+        'components/form',
+        'components/footer',
+        'components/header',
+        'components/main',
+        'components/message';

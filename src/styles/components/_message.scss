@@ -1,0 +1,35 @@
+.message {
+  $root: &;
+
+  background-color: #ddd;
+  border-radius: $radius;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 10px 15px;
+  text-align: center;
+
+  &--error {
+    background-color: $negative-color;
+    color: white;
+  }
+
+  &--success {
+    background-color: $positive-color;
+    color: white;
+  }
+
+  &--warning {
+    background-color: $warning-color;
+    color: black;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    padding-left: 20px;
+  }
+}

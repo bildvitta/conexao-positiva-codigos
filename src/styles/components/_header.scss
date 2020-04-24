@@ -1,0 +1,14 @@
+.header {
+  padding: 50px 0;
+
+  &__brand {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  &__brand-image {
+    display: block;
+    width: 100%;
+  }
+}

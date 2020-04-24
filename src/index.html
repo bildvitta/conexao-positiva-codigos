@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Conexão Positiva - Código da Cesta Básica</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="styles/main.scss">
+
+    <script src="scripts/main.js" async defer></script>
+
+    <meta name="theme-color" content="#fff">
+  </head>
+
+  <body>
+    <header class="header">
+        <div class="container">
+          <div class="header__brand">
+            <img alt="Conexão Positiva" class="header__brand-image" src="images/conexao-positiva.svg">
+          </div>
+        </div>
+      </header>
+
+    <div class="main">
+      <div class="container main__container">
+        <article class="main__content">
+          <p>Insira abaixo o código enviado por mensagem de texto para confirmar a entrega da cesta básica.</p>
+        </article>
+
+        <form action="https://conexao-positiva.bivilabs.com.br/api/codes" class="form" method="get">
+          <button class="form__button" type="submit">Validar</button>
+          <input autofocus class="form__field" name="code" placeholder="••••••" required type="text">
+        </form>
+
+        <div class="message" style="display: none;">
+          Essa é uma mensagem!
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <img alt="Bild Vitta" class="footer__company" src="images/bild-vitta.png">
+      </div>
+    </div>
+  </body>
+</html>
