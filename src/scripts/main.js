@@ -18,6 +18,11 @@ $(document).ready(function () {
   $('.form').on('submit', function () {
     var code = codeElement.val()
 
+    if (code.length < 6) {
+      updateMessage('O código possui 6 digitos.', 'warning')
+      return false
+    }
+
     $.ajax({
       type: 'get',
       url: this.action,
