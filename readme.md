@@ -14,6 +14,7 @@ $ npm run dev
 Para gerar os arquivos de produção, use:
 
 ``` sh
-$ rm dist/
 $ npm run prod
 ```
+
+Os arquivos estarão no diretório `dist` localizado na raiz da aplicação.

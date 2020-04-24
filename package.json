@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "prod": "parcel build src/index.html"
+    "prod": "rm -rf dist/; parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
